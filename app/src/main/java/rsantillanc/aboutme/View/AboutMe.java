@@ -1,12 +1,14 @@
-package rsantillanc.aboutme;
+package rsantillanc.aboutme.View;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import rsantillanc.aboutme.R;
 
-public class AboutMe extends ActionBarActivity {
+
+public class AboutMe extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
