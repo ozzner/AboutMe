@@ -39,8 +39,8 @@ public class AboutMe extends AppCompatActivity
      */
     private void initViews() {
         mToolbar = (Toolbar) findViewById(R.id.app_toolbar);
-        mNavView = (NavigationView)findViewById(R.id.navigation_view);
-        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        mNavView = (NavigationView) findViewById(R.id.navigation_view);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
     }
 
 
@@ -50,17 +50,12 @@ public class AboutMe extends AppCompatActivity
     private void setUps() {
         setUpActionBar();
         setUpNavigationView();
-        setUpDrawerLayout();
     }
 
-    private void setUpDrawerLayout() {
-//        mDrawerToggle = new ActionBarDrawerToggle(this,)
-    }
 
     private void setUpNavigationView() {
         mNavView.setNavigationItemSelectedListener(this);
     }
-
 
 
     private void setUpActionBar() {
@@ -71,8 +66,6 @@ public class AboutMe extends AppCompatActivity
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_nav_view);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
-
 
 
     @Override
@@ -97,13 +90,13 @@ public class AboutMe extends AppCompatActivity
 
     //------------------- CallBacks --------------------
 
-    /*NavigationView*/
+    //NavigationView
     @Override
     public boolean onNavigationItemSelected(MenuItem menuItem) {
         boolean isTransaction = false;
         Fragment ui = null;
 
-        switch (menuItem.getItemId()){
+        switch (menuItem.getItemId()) {
             case R.id.main_menu_title_proyect:
                 ui = new HomeFragment();
                 isTransaction = true;
@@ -119,10 +112,10 @@ public class AboutMe extends AppCompatActivity
                 break;
         }
 
-        if (isTransaction){
+        if (isTransaction) {
             FragmentManager manager = getSupportFragmentManager();
             FragmentTransaction transaction = manager.beginTransaction();
-            transaction.replace(R.id.fragments_content,ui);
+            transaction.replace(R.id.fragments_content, ui);
             transaction.commit();
 
             //Active row
@@ -139,6 +132,6 @@ public class AboutMe extends AppCompatActivity
      * Esta debe estar en una clase generica
      */
     private void showToast(CharSequence message) {
-        Toast.makeText(this,message,Toast.LENGTH_LONG).show();
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 }

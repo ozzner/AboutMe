@@ -4,4 +4,13 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="txt_title">25sp</dimen>
     <dimen name="txt_14">14sp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="custom_title_size_toolbar">15sp</dimen>
+    <dimen name="custom_subtitle_size_toolbar">13sp</dimen>
+
+    <!-- Header navigation view dimens -->
+    <dimen name="nav_view_header_padding">16dp</dimen>
+    <dimen name="nav_view_header_height">192dp</dimen>
+    <dimen name="nav_view_header_image_profile">64dp</dimen>
 </resources>
