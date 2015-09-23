@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/main_menu_title_proyect"
+        android:icon="@drawable/ic_default_image"
+        android:title="@string/title_nav_view_proyect"/>
+    <item
+        android:id="@+id/main_menu_title_curriculum"
+        android:icon="@drawable/ic_default_image"
+        android:title="@string/title_nav_view_curriculum"/>
+</group>
+    <item
+        android:id="@+id/sub_menu_settings"
+        android:title="@string/sub_menu_settings">
+        <menu>
+            <item
+                android:id="@+id/sub_menu_about"
+                android:icon="@drawable/ic_default_image"
+                android:title="@string/sub_title_about"
+                />
+        </menu>
+
+    </item>
+</menu>

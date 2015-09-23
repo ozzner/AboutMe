@@ -3,4 +3,15 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="sub_title_about">About me</string>
+    <string name="sub_menu_settings">Settings</string>
+    <string name="title_nav_view_curriculum">Curriculum</string>
+    <string name="title_nav_view_proyect">Proyects</string>
+    <string name="main_subtitle_my_job">Android developer</string>
+    <string name="main_title_my_name">Renzo D. Santillán Ch.</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
 </resources>
